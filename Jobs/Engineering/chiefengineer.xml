@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="chiefengineer"
+       minkarma="30" maxnumber="1"
+       uicolor="0.98,0.82,0.53"
+       vitalitymodifier="0"
+       pricemultiplier="1"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,727,28,28" origin="0.5,0.5"/>
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="electrical" level="50,60" primary="true"/>
+      <Skill identifier="mechanical" level="40,50"/>
+      <Skill identifier="weapons" level="15,25"/>
+      <Skill identifier="medical" level="15,25"/>
+      <Skill identifier="helm" level="5,10"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="cejumpsuit" equip="true" outfit="true"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+      <Item identifier="toolbelt" equip="true"/>
+      <Item identifier="wrench"/>
+      <Item identifier="screwdriver"/>
+      <Item identifier="fuelrod"/>
+    </ItemSet>
+  </Job>
+</Jobs>

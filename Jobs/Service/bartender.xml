@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="bartender"
+       maxnumber="1" minkarma="30"
+       uicolor="97, 176, 83"
+       vitalitymodifier="0"
+       pricemultiplier="0.8"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="%ModDir%/Jobs/MainIconsAtlas.png" sourcerect="516,260,119,118" origin="0.5,0.5"/>
+    </Jobicon>
+    <Skills>
+      <Skill identifier="weapons" level="25,35" primary="true"/>
+      <Skill identifier="mechanical" level="20,30"/>
+      <Skill identifier="electrical" level="20,30"/>
+      <Skill identifier="medical" level="20,30"/>
+      <Skill identifier="helm" level="0,10"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="bartenderjumpsuit" equip="true" outfit="true"/>
+      <Item identifier="ethanol"/>
+      <Item identifier="ethanol"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+    </ItemSet>
+  </Job>
+</Jobs>

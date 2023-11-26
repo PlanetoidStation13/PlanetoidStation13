@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <leftwall name="Clean left wall" identifier="leftwallcleanP" category="Legacy" descriptionidentifier="resizeablewallwithcollisiondetection" width="32" height="64" resizevertical="true" body="true" castshadow="true" health="55" tags="inner">
+    <sprite texture="%ModDir%/Map/Legacy/WallsCleanLegacy/testroom.png" sourcerect="953,214,32,576" depth="0.05" fliphorizontal="true" />
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="989,214,32,576" depth="0.85" fliphorizontal="true" />
+  </leftwall>
+  <rightwall name="Clean Right Wall" identifier="rightwallcleanP" category="Legacy" descriptionidentifier="resizeablewallwithcollisiondetection" width="32" height="64" resizevertical="true" body="true" castshadow="true" health="55" tags="inner">
+    <sprite texture="%ModDir%/Map/Legacy/WallsCleanLegacy/testroom.png" sourcerect="953,214,32,576" depth="0.05" />
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="989,214,32,576" depth="0.85" />
+  </rightwall>
+  <topwall name="Clean Top Wall" identifier="topwallcleanP" category="Legacy" descriptionidentifier="resizeablewallwithcollisiondetection" width="64" height="32" resizehorizontal="true" body="true" castshadow="true" health="55" tags="inner">
+    <sprite texture="%ModDir%/Map/Legacy/WallsCleanLegacy/testroom.png" sourcerect="0,989,576,32" depth="0.06" />
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="0,953,576,32" depth="0.85" />
+  </topwall>
+</prefabs>

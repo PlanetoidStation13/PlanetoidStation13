@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Old Door" identifier="DoorLegacyP" tags="door" scale="1.0" health="75" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1" allowrotatingineditor="false" allowedlinks="structure,item" ondamagedthreshold="10" linkable="true">
+    <Sprite texture="%ModDir%/Map/Legacy/DoorLegacy/door.png" sourcerect="0,0,49,209" depth="0.51" origin="0.5,0.5" />
+    <Door canbeselected="true" canbepicked="true" pickkey="Action" msg="ItemMsgForceOpenCrowbar" PickingTime="10.0" shadowscale="0.7,1">
+      <RequiredItem items="crowbar" type="Equipped" />
+      <Sprite texture="%ModDir%/Map/Legacy/DoorLegacy/door.png" sourcerect="80,0,19,208" depth="0.05" origin="0.5,0.0" />
+      <WeldedSprite texture="%ModDir%/Map/Legacy/DoorLegacy/door.png" sourcerect="99,0,19,188" depth="0.0" origin="0.5,0.5" />
+      <BrokenSprite texture="%ModDir%/Map/Legacy/DoorLegacy/door.png" sourcerect="134,0,57,209" depth="0.509" origin="0.5,0.0" scale="true" />
+      <sound file="%ModDir%/Map/Legacy/DoorLegacy/door.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" onlyinsamesub="true" />
+      <sound file="%ModDir%/Map/Legacy/DoorLegacy/doorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="%ModDir%/Map/Legacy/DoorLegacy/doorBreak2.ogg" type="OnBroken" range="3000" />
+      <StatusEffect type="OnDamaged" target="This">
+        <sound file="%ModDir%/Map/Legacy/DoorLegacy/doorBreak1.ogg" selectionmode="Random" range="800" />
+        <sound file="%ModDir%/Map/Legacy/DoorLegacy/doorBreak2.ogg" range="800" />
+      </StatusEffect>
+    </Door>
+    <AiTarget sightrange="1500.0" static="True" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+</Items>

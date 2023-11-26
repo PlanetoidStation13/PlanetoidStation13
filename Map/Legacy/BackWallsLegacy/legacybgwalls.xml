@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <roughbkgwall name="RoughBKGWall" identifier="roughbgwallPLegacy" descriptionidentifier="backgroundwall" allowattachitems="true" width="64" height="64" resizehorizontal="true" resizevertical="true" category="Legacy" subcategory="backgroundwall">
+    <sprite texture="%ModDir%/Map/Legacy/BackWallsLegacy/testroom.png" sourcerect="200,104,240,240" depth="0.98" />
+  </roughbkgwall>
+  <cleanbkgwall name="CleanBKGWall" identifier="cleanbgwallPLegacy" allowattachitems="true" width="64" height="64" resizehorizontal="true" resizevertical="true" category="Legacy" subcategory="backgroundwall">
+    <sprite texture="%ModDir%/Map/Legacy/BackWallsLegacy/testroom.png" sourcerect="448,96,448,224" depth="0.98" />
+  </cleanbkgwall>
+  <bkgpanels name="BGKPanels" identifier="bgpanelsPLegacy" descriptionidentifier="backgroundwall" allowattachitems="true" width="64" height="64" resizehorizontal="true" resizevertical="true" category="Legacy" subcategory="backgroundwall">
+    <sprite texture="%ModDir%/Map/Legacy/BackWallsLegacy/testroom.png" sourcerect="721,337,222,223" depth="0.98" />
+  </bkgpanels>
+  <bkgpanelswindow name="BKGPanelsWindow" identifier="bgpanelswindowPLegacy" descriptionidentifier="backgroundwall" allowattachitems="true" width="64" height="64" resizehorizontal="true" resizevertical="true" category="Legacy" subcategory="backgroundwall">
+    <sprite texture="%ModDir%/Map/Legacy/BackWallsLegacy/testroom.png" sourcerect="724,560,223,223" depth="0.98" />
+  </bkgpanelswindow>
+  <bkgorangepanels name="BKGOrangePanels" identifier="bgorangepanelsPLegacy" descriptionidentifier="backgroundwall" allowattachitems="true" width="64" height="64" resizehorizontal="true" resizevertical="true" category="Legacy" subcategory="backgroundwall">
+    <sprite texture="%ModDir%/Map/Legacy/BackWallsLegacy/testroom.png" sourcerect="576,799,446,223" depth="0.98" />
+  </bkgorangepanels>
+</prefabs>

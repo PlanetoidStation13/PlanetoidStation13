@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <label name="SyndicateLogo" identifier="Syndicate Logo" scale="0.25" category="Decorative">
+    <sprite texture="%ModDir%/Map/Syndicate Logo.png" SourceRect="0,0,594,860" depth="0.85" origin="0.5,0.5" />
+  </label>
+  <label name="SyndicateLogo" identifier="Syndicate Logo 2" scale="0.25" category="Decorative">
+    <sprite texture="%ModDir%/Map/Syndicate Logo 2.png" SourceRect="0,0,594,860" depth="0.85" origin="0.5,0.5" />
+  </label>
+  <label name="NanoTrasenLogo" identifier="NanoTrasen Logo" scale="0.25" category="Decorative">
+    <sprite texture="%ModDir%/Map/NanoTrasen Logo.png" SourceRect="0,0,594,860" depth="0.85" origin="0.5,0.5" />
+  </label>
+</prefabs>

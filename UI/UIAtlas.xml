@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <MainMenuCampaignIcon color="44,208,150,255">
+    <Sprite name="MainMenuCampaignIcon" texture="%ModDir%/UI/InventoryUIAtlas.png" sourcerect="773,524,160,174" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </MainMenuCampaignIcon>
+  <MainMenuMultiplayerIcon color="44,208,150,255">
+    <Sprite name="MainMenuMultiplayerIcon" texture="%ModDir%/UI/InventoryUIAtlas.png" sourcerect="773,335,160,174" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </MainMenuMultiplayerIcon>
+  <MainMenuCustomizeIcon color="44,208,150,255">
+    <Sprite name="MainMenuCustomizeIcon" texture="%ModDir%/UI/InventoryUIAtlas.png" sourcerect="582,713,159,174" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </MainMenuCustomizeIcon>
+  <MainMenuOptionIcon color="44,208,150,255">
+    <Sprite name="MainMenuOptionIcon" texture="%ModDir%/UI/InventoryUIAtlas.png" sourcerect="582,524,159,174" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+  </MainMenuOptionIcon>
+  <MainMenuGUITextBlock textcolor="0,0,0,255" color="255,255,255,255" padding="10,10,10,10">
+    <Sprite name="MainMenuGUITextBlock" texture="%ModDir%/UI/InventoryUIAtlas.png" sourcerect="10,775,514,39" tile="false" origin="0.5,0.5" compress="false" />
+  </MainMenuGUITextBlock>
+  <MainMenuGUIFrame color="255,255,255,255">
+    <Sprite name="MainMenuGUIFrame" texture="%ModDir%/UI/InventoryUIAtlas.png" sourcerect="9,814,480,189" tile="false" origin="0.5,0.5" />
+  </MainMenuGUIFrame>
+</Override>

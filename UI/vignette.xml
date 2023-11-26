@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <MainMenuVignette color="255,255,255,255">
+    <Sprite name="MainMenuVignette" texture="%ModDir%/UI/MainMenuVignette.png" sourcerect="0,0,2048,1152" origin="0.5,0.5" />
+  </MainMenuVignette>
+</Override>

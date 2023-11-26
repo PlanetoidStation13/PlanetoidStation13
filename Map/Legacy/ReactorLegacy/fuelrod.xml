@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Old Fuelrod" identifier="fuelrodlegacyp" Category="Legacy" Tags="smallitem,reactorfuel" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="1">
+    <PreferredContainer primary="abandonedengcab,wreckengcab" amount="1" spawnprobability="0.3" />
+    <Price baseprice="500" displaynonempty="true" minavailable="2">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" minavailable="3" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="uranium" mincondition="0.95" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="electrical" level="25" />
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="lead" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="15" />
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="fuelrod" mincondition="0.0" usecondition="false" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Map/Legacy/ReactorLegacy/fuelrod.png" sourcerect="0,0,7,38" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Map/Legacy/ReactorLegacy/fuelrod.png" depth="0.55" sourcerect="0,0,7,38" />
+    <Body radius="6" height="55" density="20" />
+    <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect">
+      <!--Status effect to cause radiation whenever handling fuel rods. Disabled for now because effect doesn't stop when no longer in contact with fuel rods.-->
+      <!--<StatusEffect type="Always" target="Character">
+        <Affliction identifier="radiationsickness" strength="0.25" />
+      </StatusEffect>-->
+    </Holdable>
+    <ItemContainer hideitems="true" capacity="1" itemrotation="90" drawinventory="false" canbeselected="false" SpawnWithId="nucleargunbolt" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <Containable items="nucleargunbolt" />
+      <StatusEffect type="OnUse" target="This" condition="-25.0" disabledeltatime="true">
+        <SpawnItem identifiers="nucleargunbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.1" />
+    </Quality>
+  </Item>
+</Items>

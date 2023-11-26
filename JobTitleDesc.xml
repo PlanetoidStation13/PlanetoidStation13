@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" translatedname="jobs">
+  <!-- Jobs -->
+  <jobname.firstofficer>First Officer</jobname.firstofficer>
+  <jobdescription.firstofficer>The First Officer is second in-line for command, they are supposed to protect the captain. And should the captain ever die, the FO is to assume captainship duties. The FO does not have authority over any departments UNLESS they are the acting captain.</jobdescription.firstofficer>
+  <jobname.chiefofstaff>Chief of Staff</jobname.chiefofstaff>
+  <jobdescription.chiefofstaff>The Chief of Staff issues access modified ID cards to the crew should it ever be needed. They also have authority over the Cargo and Service departments. They are behind the First Officer in the chain of command for acting captainship.</jobdescription.chiefofstaff>
+
+  <jobname.chiefengineer>Chief Engineer</jobname.chiefengineer>
+  <jobdescription.chiefengineer>The CE (Chief Engineer) is the Command Head of the Engineering department, responsible for commanding the engineers and mechanics.</jobdescription.chiefengineer>
+
+  <jobname.chiefmedicalofficer>Chief Medical Officer</jobname.chiefmedicalofficer>
+  <jobdescription.chiefmedicalofficer>The CMO (Chief Medical Officer) is the Command Head of the Medical department, responsible for commanding the Medical team.</jobdescription.chiefmedicalofficer>
+  <jobname.brigphysician>Brig Physician</jobname.brigphysician>
+  <jobdescription.brigphysician>The Brig Physician's job is to heal injured members of security. If there aren't any security members in the shift, then their new job is to go to medical and help the crew.</jobdescription.brigphysician>
+
+  <jobname.quartermaster>Quartermaster</jobname.quartermaster>
+  <jobdescription.quartermaster>The Quartermaster oversees the cargo department and authorizes potentially dangerous transactions such as exosuits or guns.</jobdescription.quartermaster>
+  <jobname.deepseaminer>Deep Sea Miner</jobname.deepseaminer>
+  <jobdescription.deepseaminer>The Deep Sea Miner or just Miner for short gets materials from ore deposits around the icy walls of Europa while also salvaging downed submarines or stations for spare parts and or supplies.</jobdescription.deepseaminer>
+  <jobname.cargotechnician>Cargo Technician</jobname.cargotechnician>
+  <jobdescription.cargotechnician>Cargo Technicians are in charge of maintaining the front desk as well as keeping in check the supplies in the cargo storage room. They are led by the Quartermaster</jobdescription.cargotechnician>
+
+  <jobname.scientist>Scientist</jobname.scientist>
+  <jobdescription.scientist>Scientists research stuff, they are led by the Research Director.</jobdescription.scientist>
+  <jobname.researchdirector>Research Director</jobname.researchdirector>
+  <jobdescription.researchdirector>The Research Director is the head of the science department, they authorize potentially dangerous experiments and make sure the scientists aren't burning their fingers off or something.</jobdescription.researchdirector>
+
+  <jobname.pclown>Clown</jobname.pclown>
+  <jobdescription.pclown>As a clown, your main duty is to entertain the crew without causing too much damage.</jobdescription.pclown>
+  <jobname.janitor>Janitor</jobname.janitor>
+  <jobdescription.janitor>You are a janitor, you are the one who cleans the station. Put ethanol in your sprayer and clean it ALL. Make sure the station is absolutely SPOTLESS.</jobdescription.janitor>
+  <jobname.bartender>Bartender</jobname.bartender>
+  <jobdescription.bartender>You are the Bartender, you tend the bar, simple as that really.</jobdescription.bartender>
+
+  <jobname.warden>Warden</jobname.warden>
+  <jobdescription.warden>You are the Warden, your job is to process prisoners into cells and keep the brig in working order. You are not to make arrests.</jobdescription.warden>
+  <jobname.hos>Head of Security</jobname.hos>
+  <jobdescription.hos>You are the Head of Security, you are the, as the name suggests, the head of the Security department. Give orders to the security team and protect the station.</jobdescription.hos>
+
+  <jobname.gimmick>Gimmick</jobname.gimmick>
+  <jobdescription.gimmick>This job serves as a misc gimmick job, choose from one of three itemsets to do something funny this round! Reminder that you are NOT crew if you choose the ship captain gimmick (first item set.)</jobdescription.gimmick>
+  <jobname.pprisoner>Prisoner</jobname.pprisoner>
+  <jobdescription.pprisoner>You are a prisoner, Central Command has shipped you off to a station for transport, either try to win your freedom from security or escape. (You are not an antagonist, do not break server rules, this is just a gimmick.)</jobdescription.pprisoner>
+
+</infotexts>
