@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Plutonium Core" identifier="Pplutoniumcore" category="Weapon" Tags="nuclearcore" maxstacksize="1" Scale="0.3" cargocontaineridentifier="" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Command/Plutonium Core/plutoniumcore.png" sourcerect="0,0,43,43" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Command/Plutonium Core/plutoniumcore.png" depth="0.8" sourcerect="0,0,43,43" origin="0.5,0.5" />
+    <Body width="45" height="30" density="20" />
+    <Holdable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="false" removeoncombined="true" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <sound file="%ModDir%/Items/Command/nuclearexplosion.ogg" type="OnBroken" range="10000" selectionmode="All" />
+      <sound file="%ModDir%/Items/Command/nuclearexplosion.ogg" type="OnBroken" range="10000" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="50000.0" ballastfloradamage="50000" structuredamage="50000" levelwalldamage="50000" itemdamage="50000" stun="50000" force="50000" severlimbsprobability="5" decal="explosion" decalsize="10">
+          <Affliction identifier="burn" strength="5000" />
+          <Affliction identifier="explosiondamage" strength="5000" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+</Items>

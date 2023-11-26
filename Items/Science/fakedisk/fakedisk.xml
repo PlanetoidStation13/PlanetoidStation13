@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Nuclear Authentication Disk" identifier="fakenukedisk" category="Equipment" Tags="smallitem" cargocontaineridentifier="" description="Woah, this looks dangerous. A nuclear disk made for detonation of nuclear devices aboard NT stations and the like, seems to be encrypted. Upon further inspection.... It's a phony!" >
+    <Fabricate suitablefabricators="protolathe" requiredtime="30">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="nukedisk.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="nukedisk.png" depth="0.5" sourcerect="0,0,28,28" />
+    <Body width="16" height="12" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
+  </Item>
+</Items>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Hamburger" identifier="PHamburger" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" damagedbymonsters="false" description="A Hamburger. Yummy." scale="0.30" impactsoundtag="impact_wetsplat">
+    <Sprite name="medbrain" texture="%ModDir%/Items/Edibles/Food/Burgers/Hamburger/hamburger.png" sourcerect="0,0,60,60" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="60" density="15" />
+    <AiTarget sightrange="1000" static="true" />
+    <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="35,23" handle1="15,0" swingamount="20,20" swingspeed="2" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This,Character" condition="-10" swingwhenusing="true" swingspeed="2" aimpos="35,23">
+        <sound file="%ModDir%/Items/Edibles/Food/chew.ogg" type="OnUse" range="600" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional condition="eq 0" />
+        <sound type="OnUse" file="%ModDir%/Items/Edibles/Food/swallow.ogg" range="600" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>
+<!-- All credit to the Thalassophobia Mod Author -->

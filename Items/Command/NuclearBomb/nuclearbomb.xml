@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Nuclear Bomb" identifier="Pnuclearbomb" description="Best to not stick around and see if this is armed..." category="Equipment,Weapon" Tags="Pnucleardetonator" Scale="0.5" cargocontaineridentifier="" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Command/NuclearBomb/nuclearbomb.png" sourcerect="0,0,200,154" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Command/NuclearBomb/nuclearbomb.png" depth="0.8" sourcerect="0,0,200,154" origin="0.5,0.5" />
+    <ItemContainer canbeselected="true" capacity="1" maxstacksize="1" itempos="20,-11" hideitems="false" containedstateindicatorstyle="explosive" containedspritedepth="0.81">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="nuclearcore" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+    </ItemContainer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="activate" displayname="connection.activate">
+        <StatusEffect type="OnUse" target="Contained">
+          <Use />
+          <Remove />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+</Items>

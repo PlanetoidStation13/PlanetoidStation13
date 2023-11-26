@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Maraca" identifier="maraca" category="Misc" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="When he plays the maracas he goes chikk chikki boom boom.">
+    <PreferredContainer primary="crewcab" spawnprobability="0.01" notcampaign="true" />
+    <PreferredContainer secondary="wreckcrewcab,abandonedcrewcab" spawnprobability="0.05" />
+    <Price baseprice="450" canbespecial="false">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" sold="false" />
+      <Price storeidentifier="merchantmine" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="protolathe" requiredtime="10">
+      <RequiredItem identifier="plastic" amount="1"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/Instruments/Maraca/Maraca.png" sourcerect="6,0,24,58" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Instruments/Maraca/Maraca.png" sourcerect="6,0,24,58" depth="0.55" />
+    <Body width="50" height="20" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="2">
+      <Sound file="%ModDir%/Items/Instruments/Maraca/maraca.ogg" type="OnUse" />
+    </RangedWeapon>
+    <aitarget soundrange="1000" fadeouttime="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

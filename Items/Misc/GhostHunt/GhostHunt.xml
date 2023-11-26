@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="EMF Reader" identifier="emf" category="Misc" tags="smallitem" scale="0.025" cargocontaineridentifier="metalcrate" description="Use this to detect EMF signals produced from Phasmal entities.">
+    <PreferredContainer primary="crewcab" spawnprobability="0.05" notcampaign="true"/>
+    <PreferredContainer secondary="wreckcrewcab,abandonedcrewcab" spawnprobability="0.05"/>
+    <Price baseprice="150" canbespecial="false">
+      <Price storeidentifier="merchantoutpost" minavailable="1"/>
+      <Price storeidentifier="merchantcity" minavailable="1"/>
+      <Price storeidentifier="merchantresearch" sold="false" />
+      <Price storeidentifier="merchantmilitary" sold="false" />
+      <Price storeidentifier="merchantmine" sold="false" />
+    </Price>
+    <InventoryIcon texture="EMF.png" sourcerect="960,960,0,0" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="EMF.png" sourcerect="960,960,0,0" depth="0.55" />
+    <Body width="50" height="20" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon holdtrigger="true" reload="0.3">
+      <Sound file="%ModDir%/Items/Misc/GhostHunt/EMF.ogg" type="OnUse" range="1000" />
+    </RangedWeapon>
+    <aitarget soundrange="1000" fadeouttime="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

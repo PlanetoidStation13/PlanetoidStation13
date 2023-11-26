@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Bartender Jumpsuit" identifier="bartenderjumpsuit" nameidentifier="stationadminoutfit" category="Equipment" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Items/InventoryIconAtlas2.png" sheetindex="3,8" sheetelementsize="64,64" />
+    <Sprite name="administrator" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="905,160,119,57" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Administrator Suit Torso" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Right Hand" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Left Hand" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Right Lower Arm" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Left Lower Arm" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Right Upper Arm" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Left Upper Arm" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Waist" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Right Thigh" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Left Thigh" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Right Leg" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Left Leg" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Left Shoe" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Administrator Suit Right Shoe" texture="%ModDir%/Items/Clothing/Underclothing/Service/bartender.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
+    </Wearable>
+  </Item>
+</Items>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Nuclear Authentication Disk" identifier="nukedisk" category="Equipment" Tags="smallitem" cargocontaineridentifier="" description="A nuclear disk made for detonation of nuclear devices aboard NT stations and the like, seems to be encrypted.">
+    <InventoryIcon texture="%ModDir%/Items/Command/NuclearDisk/nukedisk.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Command/NuclearDisk/nukedisk.png" depth="0.5" sourcerect="0,0,28,28" />
+    <Body width="16" height="12" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
+  </Item>
+</Items>
