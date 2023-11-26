@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Unstable Nuclear Core" identifier="Punstablecore" category="Weapon" Tags="nuclearcore" maxstacksize="1" Scale="0.3" cargocontaineridentifier="" impactsoundtag="impact_soft" description="An unstable nuclear core produced by RnD. Seems.... Unstable! Patented by: SCIENCE TEAM!!">
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <Fabricate suitablefabricators="protolathe" requiredtime="300">
+      <RequiredItem identifier="Pplutoniumcore" />
+    </Fabricate>
+    <InventoryIcon texture="unstablecore.png" sourcerect="0,0,54,54" origin="0.5,0.5" />
+    <Sprite texture="unstablecore.png" depth="0.8" sourcerect="0,0,54,54" origin="0.5,0.5" />
+    <Body width="45" height="30" density="20" />
+    <Holdable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="false" removeoncombined="true" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <sound file="%ModDir%/Items/Command/nuclearexplosion.ogg" type="OnBroken" range="10000" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="3000.0" ballastfloradamage="3000" structuredamage="3000" levelwalldamage="3000" itemdamage="3000" stun="50000" force="50000" severlimbsprobability="5" decal="explosion" decalsize="5">
+          <Affliction identifier="burn" strength="5000" />
+          <Affliction identifier="explosiondamage" strength="5000" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+</Items>

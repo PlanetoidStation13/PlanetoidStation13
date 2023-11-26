@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Hotdog" identifier="PHotdog" category="Equipment" tags=",smallitem" cargocontaineridentifier="metalcrate" damagedbymonsters="false" description="A hotdog with a plain bun and some ketchup." scale="0.4" impactsoundtag="impact_wetsplat">
+    <Sprite name="medbrain" texture="%ModDir%/Items/Edibles/Food/Hotdogs/Hotdog/hotdog.png" sourcerect="0,3,59,54" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="60" density="15" />
+    <AiTarget sightrange="1000" static="true" />
+    <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="35,23" handle1="15,0" swingamount="20,20" swingspeed="2" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This,Character" condition="-10" swingwhenusing="true" swingspeed="2" aimpos="35,23">
+        <sound file="%ModDir%/Items/Edibles/Food/chew.ogg" type="OnUse" range="600" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional condition="eq 0" />
+        <sound type="OnUse" file="%ModDir%/Items/Edibles/Food/swallow.ogg" range="600" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>
+<!-- All credit to the Thalassophobia Mod Author --><!-- All credit to the Thalassophobia Mod Author -->
