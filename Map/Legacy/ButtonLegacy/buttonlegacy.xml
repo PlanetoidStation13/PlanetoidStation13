@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Old Button" identifier="ButtonLegacyP" category="Legacy" tags="smallitem,button" cargocontaineridentifier="metalcrate" scale="1" impactsoundtag="impact_metal_light" isshootable="true" maxstacksize="8">
+    <Upgrade gameversion="0.10.0.0" scale="1" />
+    <Price baseprice="750" minavailable="2">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="1.5" />
+    </Price>
+    <Sprite texture="%ModDir%/Map/Legacy/ButtonLegacy/button.png" sourcerect="1,1,22,26" depth="0.8" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" amount="1" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="25" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" amount="2" />
+    </Fabricate>
+    <Body width="64" height="64" density="40" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+      <sound file="%ModDir%/Map/Legacy/ButtonLegacy/beep.ogg" type="OnUse" range="500.0" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout" />
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+      <requireditem identifier="wrench" type="Equipped" />
+    </Holdable>
+  </Item>
+</Items>

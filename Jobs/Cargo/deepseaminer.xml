@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="deepseaminer"
+       maxnumber="3" minkarma="30"
+       uicolor="124,116,76"
+       vitalitymodifier="0"
+       pricemultiplier="0.8"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="%ModDir%/Jobs/MainIconsAtlas.png" sourcerect="136,282,111,92" origin="0.5,0.5"/>
+    </Jobicon>
+    <Skills>
+      <Skill identifier="weapons" level="35,45"/>
+      <Skill identifier="mechanical" level="35,40"/>
+      <Skill identifier="electrical" level="35,40"/>
+      <Skill identifier="medical" level="30,35"/>
+      <Skill identifier="helm" level="40,45"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="minerclothes" equip="true" outfit="true"/>
+      <Item identifier="wrench"/>
+      <Item identifier="screwdriver"/>
+      <Item identifier="weldingtool"/>
+      <Item identifier="plasmacutter"/>
+      <Item identifier="oxygentank"/>
+      <Item identifier="oxygentank" showpreview="false"/>
+      <Item identifier="weldingfueltank"/>
+      <Item identifier="weldingfueltank" showpreview="false"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+    </ItemSet>
+  </Job>
+</Jobs>

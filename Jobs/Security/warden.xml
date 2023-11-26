@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="warden"
+       maxnumber="1" minkarma="40"
+       uicolor="71,59,60"
+       vitalitymodifier="10"
+       pricemultiplier="1.15"
+       idlebehavior="Patrol">
+    <Jobicon>
+      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="weapons" level="40,50" primary="true"/>
+      <Skill identifier="medical" level="25,35"/>
+      <Skill identifier="mechanical" level="15,25"/>
+      <Skill identifier="electrical" level="15,25"/>
+      <Skill identifier="helm" level="5,10"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="wardenjumpsuit" equip="true" outfit="true"/>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>   
+      <Item identifier="divingknife" equip="false"/>
+      <Item identifier="handcuffs"/>
+      <Item identifier="handcuffs"/>
+      <Item identifier="handcuffs"/>
+    </ItemSet>
+  </Job>
+</Jobs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="quartermaster"
+       maxnumber="1" minkarma="30"
+       uicolor="113,90,64"
+       vitalitymodifier="0"
+       pricemultiplier="0.8"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="%ModDir%/Jobs/MainIconsAtlas.png" sourcerect="136,282,111,92" origin="0.5,0.5"/>
+    </Jobicon>
+    <Skills>
+      <Skill identifier="weapons" level="20,30"/>
+      <Skill identifier="mechanical" level="20,30"/>
+      <Skill identifier="electrical" level="20,30"/>
+      <Skill identifier="medical" level="20,30"/>
+      <Skill identifier="helm" level="17.5,20"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="quartermasterclothes" equip="true" outfit="true"/>
+      <Item identifier="wrench"/>
+      <Item identifier="screwdriver"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+    </ItemSet>
+  </Job>
+</Jobs>

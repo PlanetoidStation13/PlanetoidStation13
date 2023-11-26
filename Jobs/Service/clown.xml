@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="pclown"
+       maxnumber="1" minkarma="30"
+       uicolor="255,112,200"
+       vitalitymodifier="0"
+       pricemultiplier="0.8"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="%ModDir%/Jobs/MainIconsAtlas.png" sourcerect="643,278,118,100" origin="0.5,0.5"/>
+    </Jobicon>
+    <Skills>
+      <Skill identifier="weapons" level="20,30"/>
+      <Skill identifier="mechanical" level="20,30"/>
+      <Skill identifier="electrical" level="20,30"/>
+      <Skill identifier="medical" level="20,30"/>
+      <Skill identifier="helm" level="17.5,20"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="clowncostume" equip="true" outfit="true"/>
+      <Item identifier="clownmask" equip="true"/>
+      <Item identifier="bikehorn"/>
+      <Item identifier="toyhammer"/>
+      <Item identifier="bananapeel"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+    </ItemSet>
+  </Job>
+</Jobs>

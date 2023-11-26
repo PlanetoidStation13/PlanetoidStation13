@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="pprisoner"
+       maxnumber="1" minkarma="0"
+       vitalitymodifier="0"
+       pricemultiplier="0.8"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5"/>
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5"/>
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="weapons" level="15,20"/>
+      <Skill identifier="mechanical" level="20,25"/>
+      <Skill identifier="electrical" level="20,25"/>
+      <Skill identifier="medical" level="25,30"/>
+      <Skill identifier="helm" level="15,20"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="prisonerclothes" equip="true" outfit="true"/>
+      <Item identifier="handcuffs" equip="true"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+    </ItemSet>
+  </Job>
+</Jobs>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <TitleText color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" pressedcolor="255,255,255,255">
+    <Sprite texture="%ModDir%/UI/PlanetoidTitle.png" sourcerect="0,0,1130,256" tile="false" maintainaspectratio="true"></Sprite>
+  </TitleText>
+</Override>

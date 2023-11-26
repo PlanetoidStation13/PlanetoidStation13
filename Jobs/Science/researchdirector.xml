@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="researchdirector"
+       maxnumber="1" minkarma="30"
+       uicolor="84,51,83"
+       vitalitymodifier="0"
+       pricemultiplier="0.8"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="%ModDir%/Jobs/MainIconsAtlas.png" sourcerect="388,259,119,120" origin="0.5,0.5"/>
+    </Jobicon>
+    <Skills>
+      <Skill identifier="weapons" level="30,35"/>
+      <Skill identifier="mechanical" level="20,25"/>
+      <Skill identifier="electrical" level="25,30"/>
+      <Skill identifier="medical" level="40,45"/>
+      <Skill identifier="helm" level="15,20"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="researchdirectorclothes" equip="true" outfit="true"/>
+      <Item identifier="geneticmaterial_unresearched"/> showpreview="true"/>
+      <Item identifier="genesplicer"/> showpreview="true"/>
+      <Item identifier="antibleeding1"/> showpreview="true"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+    </ItemSet>
+  </Job>
+</Jobs>

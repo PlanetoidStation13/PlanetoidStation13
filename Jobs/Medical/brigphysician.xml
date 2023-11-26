@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="brigphysician"
+       maxnumber="1" minkarma="30"
+       uicolor="0.80,0.0,0.40"
+       vitalitymodifier="10"
+       pricemultiplier="1.15"
+       idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5"/>
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="medical" level="40,50" primary="true"/>
+      <Skill identifier="weapons" level="25,35"/>
+      <Skill identifier="mechanical" level="15,25"/>
+      <Skill identifier="electrical" level="15,25"/>
+      <Skill identifier="helm" level="5,10"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="doctorsuniform1" equip="true" outfit="true"/>
+      <Item identifier="healthscanner"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+      <Item identifier="antibleeding1"/>
+      <Item identifier="antidama1"/>
+      <Item identifier="chloralhydrate"/>
+    </ItemSet>
+    <AutonomousObjectives>
+      <Order identifier="rescue" prioritymodifier="1"/>
+      <Order identifier="extinguishfires" prioritymodifier ="0.5"/>
+      <Order identifier="operatereactor" option="powerup" prioritymodifier="0.2"/>
+      <Order identifier="fixleaks" prioritymodifier="0.1"/>
+    </AutonomousObjectives>
+    <AppropriateOrders>
+      <Order identifier="rescue"/>
+      <Order identifier="requestfirstaid"/>
+    </AppropriateOrders>
+  </Job>
+</Jobs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+  <Job identifier="firstofficer"
+       maxnumber="1" minkarma="45"
+       uicolor="56,82,117"
+       vitalitymodifier="0"
+       pricemultiplier="1.3"
+       idlebehavior="StayInHull">
+    <Jobicon>
+      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="helm" level="25,30"/>
+      <Skill identifier="weapons" level="35,40" primary="true"/>
+      <Skill identifier="mechanical" level="20,25"/>
+      <Skill identifier="electrical" level="20,25"/>
+      <Skill identifier="medical" level="10,15"/>
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false"/>
+      <Item identifier="vipclothes1" equip="true" outfit="true"/>
+      <Item identifier="headset" equip="true" showpreview="false"/>
+      <Item identifier="revolver" equip="false">
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+      </Item>
+    </ItemSet>
+  </Job>
+</Jobs>
