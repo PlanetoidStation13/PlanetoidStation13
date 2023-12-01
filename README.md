@@ -3,9 +3,9 @@ The github repository for PlanetoidStation13, a Space Station 13 themed Barotrau
 
 # Notice
 
-The reason the ETCFiles folder and Characters folder are either missing or empty is because both folders contained copyrighted material from other creators, the only reason they exist on steam is purely for playable music in game for admins, as Barotrauma does not have a command to play them externally, and a lua command mod for the such has not been created yet.
+The ETCFiles folder + Characters contains copyrighted material, I cannot change this as it is music to be used in game as Barotrauma doesn't support native playing of external music files, and a lua mod for the such has also not been made.
 
-**DO NOT ADD COPYRIGHTED MATERIAL TO THE GITHUB**
+Planetoid 13 is not using these for profit or income, and once a way to play these without having them in the files, it will be changed.
 
 # License
 PlanetoidStation13 uses the Creative Commons 3.0 BY-SA License.
