@@ -95,7 +95,7 @@
   <Character file="%ModDir%/Characters/Soundplayragesmages/Soundplayragesmages.xml" />
   <Character file="%ModDir%/Characters/Soundplayscaryhorn1/Soundplayscaryhorn1.xml" />
   <Character file="%ModDir%/Characters/Soundplayscaryhorn2/Soundplayscaryhorn2.xml" />
-  <Character file="%ModDir%/Characters/Soundplayscaryhorn3/Soundplayscaryhorn3.xml" /> -->
+  <Character file="%ModDir%/Characters/Soundplayscaryhorn3/Soundplayscaryhorn3.xml" /> 
   <Item file="%ModDir%/Items/Command/NuclearDisk/nukedisk.xml" />
   <Item file="%ModDir%/Map/Legacy/ButtonLegacy/buttonlegacy.xml" />
   <Item file="%ModDir%/Map/Legacy/DoorLegacy/doorslegacy.xml" />
