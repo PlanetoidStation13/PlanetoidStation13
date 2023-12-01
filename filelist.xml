@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="PlanetoidStation13 Server Pack" modversion="2.0.2" corepackage="False" steamworkshopid="2842445038" gameversion="1.0.21.0">
-  <Sounds file="%ModDir%/ETCFiles/LobbyMusic.xml" />
+ <!-- <Sounds file="%ModDir%/ETCFiles/LobbyMusic.xml" />
   <Sounds file="%ModDir%/ETCFiles/LobbyMusic1.xml" />
   <Sounds file="%ModDir%/ETCFiles/LobbyMusic2.xml" />
   <Sounds file="%ModDir%/ETCFiles/LobbyMusic3.xml" />
-  <Sounds file="%ModDir%/ETCFiles/LobbyMusic4.xml" />
+  <Sounds file="%ModDir%/ETCFiles/LobbyMusic4.xml" /> -->?
   <Jobs file="%ModDir%/Jobs/Command/firstofficer.xml" />
   <Jobs file="%ModDir%/Jobs/Command/chiefofstaff.xml" />
   <Jobs file="%ModDir%/Jobs/Medical/chiefmedicalofficer.xml" />
@@ -26,10 +26,10 @@
   <Structure file="%ModDir%/Map/SS13 Logos.xml" />
   <UIStyle file="%ModDir%/UI/titletext.xml" />
   <UIStyle file="%ModDir%/UI/vignette.xml" />
-  <Sounds file="%ModDir%/UI/mainmenumusic.xml" />
+<!--  <Sounds file="%ModDir%/UI/mainmenumusic.xml" /> -->
   <Structure file="%ModDir%/Map/Legacy/BackWallsLegacy/legacybgwalls.xml" />
   <Structure file="%ModDir%/Map/Legacy/WallsCleanLegacy/cleanwallslegacy.xml" />
-  <Character file="%ModDir%/Characters/Musicdisctintin/Musicdisctintin.xml" />
+ <!-- <Character file="%ModDir%/Characters/Musicdisctintin/Musicdisctintin.xml" />
   <Character file="%ModDir%/Characters/Musicdiscflipflap/Musicdiscflipflap.xml" />
   <Character file="%ModDir%/Characters/Musicdiscrobocop/Musicdiscrobocop.xml" />
   <Character file="%ModDir%/Characters/Musicdiscsector11/Musicdiscsector11.xml" />
@@ -95,7 +95,7 @@
   <Character file="%ModDir%/Characters/Soundplayragesmages/Soundplayragesmages.xml" />
   <Character file="%ModDir%/Characters/Soundplayscaryhorn1/Soundplayscaryhorn1.xml" />
   <Character file="%ModDir%/Characters/Soundplayscaryhorn2/Soundplayscaryhorn2.xml" />
-  <Character file="%ModDir%/Characters/Soundplayscaryhorn3/Soundplayscaryhorn3.xml" />
+  <Character file="%ModDir%/Characters/Soundplayscaryhorn3/Soundplayscaryhorn3.xml" /> -->
   <Item file="%ModDir%/Items/Command/NuclearDisk/nukedisk.xml" />
   <Item file="%ModDir%/Map/Legacy/ButtonLegacy/buttonlegacy.xml" />
   <Item file="%ModDir%/Map/Legacy/DoorLegacy/doorslegacy.xml" />
@@ -103,6 +103,7 @@
   <Item file="%ModDir%/Items/Instruments/FunnyAccordion/ClownAccordion.xml" />
   <Item file="%ModDir%/Items/Misc/banhammer/banhammer.xml" />
   <Item file="%ModDir%/Items/Misc/SturdyBanana/sturdypeel.xml" />
+  <Item file="%ModDir%/Items/Misc/stunbaton/stunbaton.xml" />
   <Item file="%ModDir%/Items/Misc/GhostHunt/GhostHunt.xml" />
   <Item file="%ModDir%/Items/Edibles/Food/Burgers/Hamburger/hamburger.xml" />
   <Item file="%ModDir%/Items/Edibles/Food/Hotdogs/Hotdog/hotdog.xml" />
