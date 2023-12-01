@@ -1,0 +1,9 @@
+Disabled all code relating to ETCFiles
+Disabled all code relating to Characters
+Disabled call for mainmenumusic.xml
+Disabled mainmenumusic.xml
+now thats a lot of copyright!
+the code is still there, i just made it green
+Added ss13 stun baton as a misc item, it replaces vanilla baton
+
+that is all fore now >:)

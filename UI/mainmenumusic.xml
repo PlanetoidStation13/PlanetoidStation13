@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!--   i cannot test the mod with out DISABLING ALL OF THISE, EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 <sounds>
   <music file="%ModDir%/ETCFiles/Music/clown.ogg" type="menu" continuefromprevioustime="true" />
   <music file="%ModDir%/ETCFiles/Music/title0.ogg" type="menu" continuefromprevioustime="true" />
   <music file="%ModDir%/ETCFiles/Music/title3.ogg" type="menu" continuefromprevioustime="true" />
-</sounds>
+</sounds> -->

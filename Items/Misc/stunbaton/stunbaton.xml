@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Override>
+    <Item name="Stun Baton" description="For 'non-violently' apprehending the Clown." identifier="stunbaton" category="Weapon" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+      <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
+      <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1" />
+      <PreferredContainer primary="secarmcab" secondary="armcab" />
+      <Upgrade gameversion="0.9.2.0" scale="0.5" />
+      <Price baseprice="200">
+        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
+        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="steel" />
+        <Item identifier="plastic" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="weapons" level="30" />
+        <RequiredItem identifier="steel" amount="2" />
+        <RequiredItem identifier="plastic" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="StunBatonIcon.gif" sourcerect="0,0,32,32" origin="0.5,0.5" />
+      <Sprite texture="StunBaton.png" sourcerect="12,7,139,61" depth="0.55" origin="0.20663755,0.29431862" />
+      <Body width="170" height="30" density="20" />
+      <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,20" handle1="0.20663755,0.29431862" holdangle="20" aimangle="30" reload="2.5" range="100" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
+        <Attack targetimpulse="5" itemdamage="1">
+          <StatusEffect type="OnUse" target="UseTarget">
+            <Conditional entitytype="eq Character" />
+            <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+            <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+          </StatusEffect>
+          <Affliction identifier="blunttrauma" strength="2" />
+          <Affliction identifier="stun" strength="0.4" />
+        </Attack>
+        <!-- changed to use incremental stun: normal batteries cause 40 points of incremental stun -> full stun in three consecutive hits -->
+        <!-- keep weight check in place for now (affect targets with mass < 60) -->
+        <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+          <Affliction identifier="stun" strength="0.6" />
+          <Affliction identifier="incrementalstun" strength="80" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_normal.ogg" selectionmode="random" range="500" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_fast.ogg" range="500" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_slow.ogg" range="500" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_crackle.ogg" range="500" />
+          <RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+          <Explosion range="100.0" force="0.1" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="6.0" />
+          <Conditional mass="lt 60" />
+        </StatusEffect>
+        <!-- changed to use incremental stun: fulgurium batteries cause 55 points of incremental stun -> full stun in two consecutive hits -->
+        <!-- keep weight check in place for now (affect targets with mass < 150) -->
+        <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+          <Affliction identifier="stun" strength="0.3" />
+          <Affliction identifier="incrementalstun" strength="110" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_normal.ogg" selectionmode="random" range="500" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_fast.ogg" range="500" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_slow.ogg" range="500" />
+          <sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_crackle.ogg" range="500" />
+          <RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+          <Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="6.0" />
+          <Conditional mass="lt 150" />
+        </StatusEffect>
+        <!-- 4 usages with normal battery -->
+        <StatusEffect type="OnUse" target="Contained,UseTarget" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+          <Conditional entitytype="eq Character" />
+        </StatusEffect>
+      </MeleeWeapon>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+        <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+        <Containable items="mobilebattery" />
+      </ItemContainer>
+      <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.25" />
+      </Quality>
+    </Item>
+    
+  </Override>
+</Items>
