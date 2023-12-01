@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Override>
-    <Item name="Stun Baton" description="For 'non-violently' apprehending the Clown." identifier="stunbaton" category="Weapon" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Item name="Odd Looking Baton" description="A strange looking Baton. There appears to be a slot on it for Battery Cells." identifier="stunbaton" category="Weapon" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
       <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
       <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1" />
       <PreferredContainer primary="secarmcab" secondary="armcab" />
