@@ -127,7 +127,7 @@
   <ItemAssembly file="%ModDir%/Item Assemblies/Full Mechanical Toolbox.xml" />
   <ItemAssembly file="%ModDir%/Item Assemblies/Full Electrical Toolbox.xml" />
   <ItemAssembly file="%ModDir%/Item Assemblies/Full Emergency Toolbox.xml" />
-  <ItemAssembly file="%ModDir%/Item Assemblies/Nuke Plutonium Circuited.xml" />
+  <ItemAssembly file="%ModDir%/Item Assemblies/Nuclear Device Wired.xml" />
   <Submarine file="%ModDir%/Submarines/Misc/Syndicate Infiltrator.sub" />
   <Submarine file="%ModDir%/Submarines/Shuttles/BrickStation Emergency Shuttle.sub" />
   <Submarine file="%ModDir%/Submarines/Shuttles/Mini(ng) Shuttle.sub" />
