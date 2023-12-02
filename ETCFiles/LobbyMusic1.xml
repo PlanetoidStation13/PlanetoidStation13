@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sounds>
+  <music file="%ModDir%/ETCFiles/Music/title3.ogg" type="editor" continuefromprevioustime="false"/>
+</sounds>
