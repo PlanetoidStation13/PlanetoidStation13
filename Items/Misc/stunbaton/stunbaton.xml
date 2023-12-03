@@ -1,19 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Override>
-    <Item name="Odd Looking Baton" description="A strange looking Baton. There appears to be a slot on it for Battery Cells." identifier="stunbaton" category="Weapon" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-      <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1" />
-      <PreferredContainer primary="secarmcab" secondary="armcab" />
-      <Upgrade gameversion="0.9.2.0" scale="0.5" />
-      <Price baseprice="200">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
-      </Price>
+    <Item name="Odd Looking Baton" description="A strange looking Baton. There appears to be a slot on it for Battery Cells." identifier="SS13stunbaton" category="Weapon" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
       <Deconstruct time="10">
         <Item identifier="steel" />
         <Item identifier="plastic" />
@@ -30,8 +17,8 @@
         <Attack targetimpulse="5" itemdamage="1">
           <StatusEffect type="OnUse" target="UseTarget">
             <Conditional entitytype="eq Character" />
-            <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
-            <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+            <Sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_normal.ogg" selectionmode="random" range="500" />
+            <Sound file="%ModDir%/Items/Misc/stunbaton/baton_sound_crackle.ogg" range="500" />
           </StatusEffect>
           <Affliction identifier="blunttrauma" strength="2" />
           <Affliction identifier="stun" strength="0.4" />
@@ -77,6 +64,4 @@
         <QualityStat stattype="StrikingPowerMultiplier" value="0.25" />
       </Quality>
     </Item>
-    
-  </Override>
 </Items>
