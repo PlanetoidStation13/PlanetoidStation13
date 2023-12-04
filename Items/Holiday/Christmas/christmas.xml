@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item name="Christmas Sack" identifier="xmassack" tags="container" linkable="true" pickdistance="150" waterproof="true" scale="0.1">
+      <Sprite texture="christmassack.png" depth="0.84" sourcerect="0,0,600,654" origin="0.5,0.5" />
+      <ItemContainer capacity="6" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+        <GuiFrame relativesize="0.16,0.22" anchor="Center" style="ItemUI" />
+        <Containable items="present" />
+      </ItemContainer>
+    </Item>
+    <Item name="Christmas Tree" identifier="xmastree" tags="container" linkable="true" pickdistance="150" waterproof="true" scale="0.5">
+      <Sprite texture="christmastree.png" depth="0.84" sourcerect="0,0,521,773" origin="0.5,0.5" />
+      <ItemContainer capacity="10" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+        <GuiFrame relativesize="0.16,0.22" anchor="Center" style="ItemUI" />
+        <Containable items="present" />
+      </ItemContainer>
+    </Item>
+  <Item name="Small Gold Present" identifier="present1" tags="present,smallitem" scale="0.080" linkable="true" pickdistance="150">
+    <Deconstruct time="0.5"/>
+    <!--<InventoryIcon texture="present1.png" depth="0.54" sourcerect="0,0,533,333" />-->
+    <Sprite texture="present1.png" depth="0.54" sourcerect="0,0,533,333" origin="0.5,0.5" />
+    <Body width="50" height="25" density="5" />
+    <Holdable slots="RightHand+LeftHand" holdpos="20,-10" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="2" maxstacksize="2" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="Small Red Present" identifier="present2" tags="present,smallitem" scale="0.080" linkable="true" pickdistance="150">
+    <Deconstruct time="0.5"/>
+    <!--<InventoryIcon texture="present2.png" depth="0.54" sourcerect="0,0,577,433" />-->
+    <Sprite texture="present2.png" depth="0.54" sourcerect="0,0,577,433" origin="0.5,0.5" />
+    <Body width="50" height="25" density="5" />
+    <Holdable slots="RightHand+LeftHand" holdpos="20,-10" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="2" maxstacksize="2" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="Big Red Present" identifier="present3" tags="present,mediumitem" scale="0.1" linkable="true" pickdistance="150">
+    <Deconstruct time="0.5"/>
+    <!--<InventoryIcon texture="present3.png" depth="0.54" sourcerect="0,0,567,440" />-->
+    <Sprite texture="present3.png" depth="0.54" sourcerect="0,0,567,440" origin="0.5,0.5" />
+    <Body width="50" height="25" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer capacity="1" maxstacksize="5" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,largemobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="Jolly-Looking Accordion" identifier="clelfaccordion" category="Misc" Tags="smallitem,instrument" scale="0.5" description="Straight from North Europan Pole! For your jolly delight." impactsoundtag="impact_metal_light" isshootable="true">
+    <RangedWeapon reload="1" />
+    <InventoryIcon texture="Clelf Accordion.png" sourcerect="0,0,104,134" origin="0.5,0.5" />
+    <Sprite texture="Clelf Accordion.png" sourcerect="0,0,104,134" depth="0.55" origin="0.5,0.5" />
+    <Body width="92" height="110" density="20" />
+    <Holdable slots="RightHand+LeftHand,Any" controlpose="true" aimable="false" aimpos="50,-20" handle1="-20,0" handle2="-10,0" swingamount="50,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <sound file="%ModDir%/Items/Holiday/Christmas/christmas accordion.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Santa Hat" identifier="santahat" category="Equipment" tags="smallitem,clothing" description="A holly jolly Christmas hat!" impactsoundtag="impact_soft" scale="0.11">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Sprite name="santahat" texture="santahat.png" sourcerect="0,0,450,450" depth="0.6" origin="0.65,0.50" />
+    <Body radius="30" density="25" />
+    <Wearable slots="Any,Head" armorvalue="0" msg="ItemMsgPickUpSelect">
+      <sprite name="santahatwear" texture="santahat.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.15" hidewearablesoftype="Hair" sourcerect="0,0,450,450" origin="0.65,0.50" />
+    </Wearable>
+  </Item>
+    <Item name="Holly Wreath" identifier="hollywreath" tags="smallitem,deco" scale="0.1">
+      <Sprite texture="wreath.png" depth="0.84" sourcerect="0,0,515,485" origin="0.5,0.5" />
+    </Item>
+    <Item name="Fireplace" identifier="fireplace" tags="deco" scale="0.15">
+      <Sprite texture="fireplace.png" depth="0.84" sourcerect="0,0,580,475" origin="0.5,0.5" />
+    </Item>
+    <Item name="Snowglobe" identifier="snowglobe" tags="smallitem" scale="0.08">
+      <Sprite texture="snowglobe.png" depth="0.84" sourcerect="0,0,490,490" origin="0.5,0.5" />
+      <Body width="10" height="10" density="5" />
+      <Holdable slots="RightHand+LeftHand" holdpos="20,-10" handle1="-30,14" handle2="30,14" aimable="true" msg="ItemMsgPickUpSelect" />
+    </Item>
+    <Item name="Stocking" identifier="stocking" tags="container" linkable="true" pickdistance="150" waterproof="true" scale="0.1">
+      <Sprite texture="stocking.png" depth="0.84" sourcerect="0,0,324,489" origin="0.5,0.5" />
+      <ItemContainer capacity="2" slotsperrow="2" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+        <GuiFrame relativesize="0.16,0.22" anchor="Center" style="ItemUI" />
+        <Containable items="present,smallitem" />
+      </ItemContainer>
+    </Item>
+</Items>
