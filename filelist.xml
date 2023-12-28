@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="PlanetoidStation13 Server Pack" modversion="2.0.2" corepackage="False" steamworkshopid="2842445038" gameversion="1.0.21.0">
+<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="PlanetoidStation13 Server Pack" modversion="2.0.8" corepackage="False" steamworkshopid="2842445038" gameversion="1.1.19.3">
   <Sounds file="%ModDir%/ETCFiles/LobbyMusic.xml" />
   <Sounds file="%ModDir%/ETCFiles/LobbyMusic1.xml" />
   <Sounds file="%ModDir%/ETCFiles/LobbyMusic2.xml" />
   <Sounds file="%ModDir%/ETCFiles/LobbyMusic3.xml" />
-  <Sounds file="%ModDir%/ETCFiles/LobbyMusic4.xml" /> 
+  <Sounds file="%ModDir%/ETCFiles/LobbyMusic4.xml" />
   <Jobs file="%ModDir%/Jobs/Command/firstofficer.xml" />
   <Jobs file="%ModDir%/Jobs/Command/chiefofstaff.xml" />
   <Jobs file="%ModDir%/Jobs/Medical/chiefmedicalofficer.xml" />
@@ -26,7 +26,7 @@
   <Structure file="%ModDir%/Map/SS13 Logos.xml" />
   <UIStyle file="%ModDir%/UI/titletext.xml" />
   <UIStyle file="%ModDir%/UI/vignette.xml" />
-  <Sounds file="%ModDir%/UI/mainmenumusic.xml" /> 
+  <Sounds file="%ModDir%/UI/mainmenumusic.xml" />
   <Structure file="%ModDir%/Map/Legacy/BackWallsLegacy/legacybgwalls.xml" />
   <Structure file="%ModDir%/Map/Legacy/WallsCleanLegacy/cleanwallslegacy.xml" />
   <Character file="%ModDir%/Characters/Musicdisctintin/Musicdisctintin.xml" />
@@ -95,7 +95,7 @@
   <Character file="%ModDir%/Characters/Soundplayragesmages/Soundplayragesmages.xml" />
   <Character file="%ModDir%/Characters/Soundplayscaryhorn1/Soundplayscaryhorn1.xml" />
   <Character file="%ModDir%/Characters/Soundplayscaryhorn2/Soundplayscaryhorn2.xml" />
-  <Character file="%ModDir%/Characters/Soundplayscaryhorn3/Soundplayscaryhorn3.xml" /> 
+  <Character file="%ModDir%/Characters/Soundplayscaryhorn3/Soundplayscaryhorn3.xml" />
   <Item file="%ModDir%/Items/Command/NuclearDisk/nukedisk.xml" />
   <Item file="%ModDir%/Map/Legacy/ButtonLegacy/buttonlegacy.xml" />
   <Item file="%ModDir%/Map/Legacy/DoorLegacy/doorslegacy.xml" />
@@ -115,13 +115,13 @@
   <Item file="%ModDir%/Items/Command/NuclearBomb/nuclearbomb.xml" />
   <Item file="%ModDir%/Items/Command/Plutonium Core/plutoniumcore.xml" />
   <Item file="%ModDir%/Items/Electricity/poweritems.xml" />
-  <Item file="%ModDiR%/Items/Clothing/Underclothing/Engineering/engineeringsuits.xml" />
-  <Item file="%ModDiR%/Items/Clothing/Underclothing/Medical/medicalsuits.xml" />
-  <Item file="%ModDiR%/Items/Clothing/Underclothing/Cargo/cargosuits.xml" />
-  <Item file="%ModDiR%/Items/Clothing/Underclothing/Science/sciencesuits.xml" />
-  <Item file="%ModDiR%/Items/Clothing/Underclothing/Service/servicesuits.xml" />
-  <Item file="%ModDiR%/Items/Clothing/Underclothing/Security/securitysuits.xml" />
-  <Item file="%ModDiR%/Items/Fabricators/Science/RnD.xml" />
+  <Item file="%ModDir%/Items/Clothing/Underclothing/Engineering/engineeringsuits.xml" />
+  <Item file="%ModDir%/Items/Clothing/Underclothing/Medical/medicalsuits.xml" />
+  <Item file="%ModDir%/Items/Clothing/Underclothing/Cargo/cargosuits.xml" />
+  <Item file="%ModDir%/Items/Clothing/Underclothing/Science/sciencesuits.xml" />
+  <Item file="%ModDir%/Items/Clothing/Underclothing/Service/servicesuits.xml" />
+  <Item file="%ModDir%/Items/Clothing/Underclothing/Security/securitysuits.xml" />
+  <Item file="%ModDir%/Items/Fabricators/Science/RnD.xml" />
   <Item file="%ModDir%/Items/Genetics/materialoverride.xml" />
   <Item file="%ModDir%/Items/Science/fakedisk/fakedisk.xml" />
   <Item file="%ModDir%/Items/Science/unstablenuclearcore/unstablecore.xml" />
@@ -135,8 +135,10 @@
   <Submarine file="%ModDir%/Submarines/Mobile/Mining Ship.sub" />
   <Submarine file="%ModDir%/Submarines/Stations/Brick Station.sub" />
   <Submarine file="%ModDir%/Submarines/Stations/GobbStation 1.5.sub" />
-  <Submarine file="%ModDir%/Submarines/Stations/Shrip Station.sub" />
   <Wreck file="%ModDir%/Submarines/Wrecks/Brick Station (Wrecked).sub" />
   <Wreck file="%ModDir%/Submarines/Wrecks/Syndicate Infiltrator Wrecked.sub" />
+  <Character file="%ModDir%/Characters/Musicdiscmariahcarey/Musicdiscmariahcarey.xml" />
+  <Character file="%ModDir%/Characters/Musicdischollyjolly/Musicdischollyjolly.xml" />
   <Submarine file="%ModDir%/Submarines/Stations/MiniStation 13.sub" />
+  <Submarine file="%ModDir%/Submarines/Stations/Shrip Station.sub" />
 </contentpackage>
