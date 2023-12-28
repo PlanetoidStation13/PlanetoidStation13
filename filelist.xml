@@ -105,6 +105,7 @@
   <Item file="%ModDir%/Items/Misc/SturdyBanana/sturdypeel.xml" />
   <Item file="%ModDir%/Items/Misc/stunbaton/stunbaton.xml" />
   <Item file="%ModDir%/Items/Misc/GhostHunt/GhostHunt.xml" />
+  <Item file="%ModDir%/Items/Holiday/Christmas/christmas.xml" />
   <Item file="%ModDir%/Items/Edibles/Food/Burgers/Hamburger/hamburger.xml" />
   <Item file="%ModDir%/Items/Edibles/Food/Hotdogs/Hotdog/hotdog.xml" />
   <Item file="%ModDir%/Items/Tools/Toolboxes/Mechanical/mechtoolbox.xml" />
